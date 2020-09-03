@@ -86,6 +86,7 @@ class App extends Component {
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
+                      onClick={(e) => console.log(item.content, e) }
                       style={getItemStyle(
                         snapshot.isDragging,
                         provided.draggableProps.style
